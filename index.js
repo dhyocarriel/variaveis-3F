@@ -24,5 +24,7 @@ const ListaDeDestinos = new Array (
 console.log(ListaDeDestinos);
 console.log(ListaDeDestinos[4]);
 ListaDeDestinos.push("Coronel Vivida");
+ListaDeDestinos.push("Belo Horizonte");
+ListaDeDestinos.push("Salvador");
+ListaDeDestinos.push("Fortaleza");
 console.log (ListaDeDestinos);
-
