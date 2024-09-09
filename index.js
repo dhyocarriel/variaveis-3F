@@ -14,11 +14,11 @@ console.log(idade);
 
 //Agencia de viagens
 const ListaDeDestinos = new Array (
-  "Gramado",
-  "São Paulo",
-  "Porto Alegre",
-  "Brasilia",
-  "Salvador"
+  " Gramado",
+  " São Paulo",
+  " Porto Alegre",
+  " Brasilia",
+  " Salvador"
 );
 
 console.log(ListaDeDestinos);
@@ -28,3 +28,13 @@ ListaDeDestinos.push("Belo Horizonte");
 ListaDeDestinos.push("Salvador");
 ListaDeDestinos.push("Fortaleza");
 console.log (ListaDeDestinos);
+
+const idadeComprador = 15;
+
+if(idadeComprador >=18 ) {
+  console.log("Comprador maior de idade");
+  console.log("Destinos disponiveis: " + ListaDeDestinos);
+} else {
+  console.log("Comprador menor de idade");
+  console.log("Você é menor de idade");
+}
