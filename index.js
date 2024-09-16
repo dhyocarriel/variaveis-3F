@@ -1,3 +1,6 @@
+const prompt = require('prompt-sync')
+const entrada = prompt();
+
 let idade = 17;
 const anoNascimento = 2007 ;
 let anoAtual = 2024 ;
@@ -14,11 +17,11 @@ console.log(idade);
 
 //Agencia de viagens
 const ListaDeDestinos = new Array (
-  " Gramado",
-  " São Paulo",
-  " Porto Alegre",
-  " Brasilia",
-  " Salvador"
+  "Gramado",
+  "São Paulo",
+  "Porto Alegre",
+  "Brasilia",
+  "Salvador"
 );
 
 console.log(ListaDeDestinos);
@@ -29,12 +32,12 @@ ListaDeDestinos.push("Salvador");
 ListaDeDestinos.push("Fortaleza");
 console.log (ListaDeDestinos);
 
-const idadeComprador = 15;
+var idadeComprador = entrada("Qual a sua idade?") 
 
 if(idadeComprador >=18 ) {
   console.log("Comprador maior de idade");
   console.log("Destinos disponiveis: " + ListaDeDestinos);
 } else {
-  console.log("Comprador menor de idade");
+  console.log("Não é permitido a venda para menores de idade");
   console.log("Você é menor de idade");
 }
