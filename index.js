@@ -20,8 +20,7 @@ const ListaDeDestinos = new Array (
   "Gramado",
   "São Paulo",
   "Porto Alegre",
-  "Brasilia",
-  "Salvador"
+  "Brasilia"
 );
 
 console.log(ListaDeDestinos);
@@ -33,11 +32,14 @@ ListaDeDestinos.push("Fortaleza");
 console.log (ListaDeDestinos);
 
 var idadeComprador = entrada("Qual a sua idade?") 
+var nomeComprador = entrada("Qual o seu nome?")
 
 if(idadeComprador >=18 ) {
+  console.log("Olá Sr(a)" + nomeComprador);
   console.log("Comprador maior de idade");
   console.log("Destinos disponiveis: " + ListaDeDestinos);
 } else {
+  console.log("Olá Sr(a)" + nomeComprador)
   console.log("Não é permitido a venda para menores de idade");
   console.log("Você é menor de idade");
 }
