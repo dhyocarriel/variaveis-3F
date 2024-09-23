@@ -37,9 +37,18 @@ var nomeComprador = entrada("Qual o seu nome?")
 if(idadeComprador >=18 ) {
   console.log("Olá Sr(a)" + nomeComprador);
   console.log("Comprador maior de idade");
-  console.log("Destinos disponiveis: " + ListaDeDestinos);
 } else {
   console.log("Olá Sr(a)" + nomeComprador)
   console.log("Não é permitido a venda para menores de idade");
   console.log("Você é menor de idade");
 }
+
+var contador = 0;
+
+while(contador <9){
+  console.log(ListaDeDestinos[contador]);
+  contador++;
+}
+
+var destino = entrada("digite o numero que corresponde ao destino desejado (0-8)");
+console.log (`destino selecionado foi:${lista de destinos [destino]}`);
