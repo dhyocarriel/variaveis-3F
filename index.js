@@ -16,6 +16,12 @@ console.log(idade);
 
 
 //Agencia de viagens
+console.log("-------------------------------------------");
+console.log("------------Agencia de viagens-------------");
+
+console.log("-------------------------------------------");
+console.log("------------Lista De Destinos--------------");
+console.log("-------------------------------------------");
 const ListaDeDestinos = new Array (
   "Gramado",
   "São Paulo",
@@ -31,6 +37,10 @@ ListaDeDestinos.push("Salvador");
 ListaDeDestinos.push("Fortaleza");
 console.log (ListaDeDestinos);
 
+console.log("-------------------------------------------");
+console.log("--------------------Login------------------");
+console.log("-------------------------------------------");
+
 const loginCerto = "Dhyovana";
 const senhaCerta = "4321";
 
@@ -39,7 +49,7 @@ var idadeComprador = entrada("Qual a sua idade?")
 var login = entrada("Qual é o seu login? ")
 var senha = entrada("Digite sua senha: ")
 
-while (login != loginCerto senha != senhaCerta){
+while (login != loginCerto || senha != senhaCerta){
   console.log("Login ou senha incorretos.")
   login = entrada("Qual é o seu login? ");
   senha = entrada("Digite sua senha: ");
@@ -59,4 +69,4 @@ if(idadeComprador >=18 ) {
 
 
 var destino = entrada("digite o numero que corresponde ao destino desejado (0-8)");
-console.log (`destino selecionado foi:${lista de destinos [destino]}`);
+console.log(`destino selecionado foi:${ListaDeDestinos[destino]}`);
